@@ -248,7 +248,7 @@ do -- Nexus
 				end)
 
             self.Connected:Fire()
-
+            print("Connected")
             while self.IsConnected do
                 local Success, Error = pcall(self.Send, self, 'ping')
 
